@@ -1,0 +1,24 @@
+version: '0.1'
+
+services:
+  api:
+    image: node:10.15.0
+    expose: ['8001']
+    ports: ['8001:8001']
+    command: ['npx', 'node-dev', 'api/index.js']
+    volumes:
+      - ./api:/api
+      - api_node_modules:/api/node_modules
+  www:
+    build: ./www
+    expose: ['8000']
+    ports: ['8000:8000']
+    volumes:
+      - ./www:/www
+      - www_node_modules:/www/node_modules
+    links:
+      - api
+
+volumes:
+  api_node_modules:
+  www_node_modules:

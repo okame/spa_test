@@ -1,0 +1,98 @@
+<template>
+  <div>
+    <section class="hero is-fullheight is-default is-bold">
+      <spa-header />
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-vcentered">
+            <div class="column is-5">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/800/600/?random" alt="Description">
+              </figure>
+            </div>
+            <div class="column is-6 is-offset-1">
+              <nuxt />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <div class="container">
+          <p>FOOTER</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+import SpaHeader from '@/components/common/spa_header'
+
+export default {
+  components: {
+    SpaHeader
+  }
+}
+</script>
+
+<style>
+html,
+body {
+  font-family: 'Open Sans';
+}
+img {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.columns {
+  width: 100%;
+}
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
+}
+</style>

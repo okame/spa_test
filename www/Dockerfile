@@ -1,0 +1,5 @@
+FROM nginx:latest
+
+MAINTAINER "OKAME Factory"
+
+EXPOSE 8000
