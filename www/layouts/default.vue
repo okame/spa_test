@@ -4,22 +4,11 @@
       <spa-header />
       <div class="hero-body">
         <div class="container has-text-centered">
-          <div class="columns is-vcentered">
-            <div class="column is-5">
-              <figure class="image is-4by3">
-                <img src="https://picsum.photos/800/600/?random" alt="Description">
-              </figure>
-            </div>
-            <div class="column is-6 is-offset-1">
+          <div class="columns">
+            <div class="column is-12">
               <nuxt />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="hero-foot">
-        <div class="container">
-          <p>FOOTER</p>
         </div>
       </div>
     </section>

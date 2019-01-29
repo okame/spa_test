@@ -15,7 +15,7 @@
               <ul>
                 <nuxt-link tag="li" to="/" active-class="is-active" exact="exact">
                   <a>
-                    トップ
+                    TOP
                   </a>
                 </nuxt-link>
                 <nuxt-link tag="li" to="/todos" active-class="is-active" exact="exact">
@@ -25,7 +25,7 @@
                 </nuxt-link>
                 <nuxt-link tag="li" to="/login" active-class="is-active" exact="exact">
                   <a>
-                    ログイン
+                    Login
                   </a>
                 </nuxt-link>
               </ul>

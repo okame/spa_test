@@ -3,7 +3,7 @@
     <span class="level-left">
       {{ item.text }}
     </span>
-    <a @click="destroy" class="delete level-right" />
+    <a class="delete level-right" @click="destroy" />
   </li>
 </template>
 

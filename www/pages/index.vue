@@ -1,15 +1,8 @@
 <template>
   <section>
     <h1 class="title is-2">
-      TOPページです
+      TOP Page
     </h1>
-    <h2 class="subtitle is-4">
-      TOPページです
-    </h2>
-    <br>
-    <p class="has-text-centered">
-      HOGEHOGE
-    </p>
   </section>
 </template>
 
