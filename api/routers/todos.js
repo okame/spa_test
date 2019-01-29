@@ -6,12 +6,12 @@ router.storage = {
 }
 
 router.get('/', (req, res) => {
-  res.send({ todos })
+  res.send({ todos: router.storage.todos })
 })
 
 router.post('/', (req, res) => {
-  todos.push(req.params.todo)
-  res.send({ todos })
+  router.storage.todos.push(req.body.todo)
+  res.send({ todos: router.storage.todos })
 })
 
 module.exports = router
